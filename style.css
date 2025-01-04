@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f1f1f1;
+}
+nav {
+    background-color: rgb(82, 12, 82);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+nav ul li img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+nav ul li p{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;  
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+.containerMenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerReception{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+}
+.imgLogo img{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.home-text{
+    width: 50%;
+    margin-right: 100px;
+}
+.textP{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:black;
+}
+.home-text span{
+
+    color: rgb(128, 16, 128);
+    font-weight: bold;
+}
+.containerCtn{
+    display: flex;
+}
+.ctn{
+    margin: 10px 20px;
+    font-size: 20px;
+}
+.button{
+    background-color: rgb(128, 16, 128);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 25%;
+    cursor: pointer;
+}
+.card-cardapio{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.card-cardapio h2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 4em;
+}
+
+.card{
+    margin-bottom: 100px;
+}
+.card-img{
+    margin-bottom: 20px;
+}
+.card-cardapio img {
+    display: flex;
+    margin: auto;
+    width:15%;
+    border-radius: 10px;
+    position: relative; /* ou absolute, dependendo da sua necessidade */ 
+    z-index: 1; /* Índice menor */   
+}
+
+.buttonCard{
+    position: absolute; 
+    z-index: 2; /* Índice maior */
+    margin-left: 49%;
+    margin-top: -50px;
+    background-size: cover;
+    padding: 5px 10px;
+    background-color: rgb(63, 199, 63);
+    color: white;
+    border: 2px solid rgb(35, 137, 35);
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.card-text{
+    display: flex;
+    margin: auto;
+    width: 600px;
+    padding: 30px 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card-text p{
+    text-align: justify;
+}
+
+.footer{
+    background-color: rgb(82, 12, 82);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
