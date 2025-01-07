@@ -37,15 +37,17 @@ nav ul li p{
     margin-left: 10px;  
 }
 
-nav ul li a {
+nav ul li input{
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border: none;
+    background-color: rgb(82, 12, 82);
 }
 
-nav ul li a:hover {
+nav ul li input:hover {
     background-color: #111;
 }
 .containerMenu{
@@ -171,3 +173,4 @@ nav ul li a:hover {
 .footer a:hover{
     text-decoration: underline;
 }
+

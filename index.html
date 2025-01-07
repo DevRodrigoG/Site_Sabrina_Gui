@@ -13,14 +13,16 @@
 
     <!-- Link CSS -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilosCSS/cardapio.css">
+
+    <link rel="stylesheet" href="./estilosCSS/style.css">
 
     <title></title>
 </head>
 
 <body>
 
-    <head>
+    <header>
         <nav class="menu">
             <ul class="menu-list">
                 <div class="containerMenu">
@@ -32,14 +34,15 @@
                     </div>
                     <div>
 
-                        <li class="menu-itens"><a href="#home">Home</a></li>
-                        <li class="menu-itens"><a href="#cardapio">Cardapio</a></li>
-                        <li class="menu-itens"><a href="#footer">Sobre</a></li>
+                        <li class="menu-itens"><input type="button" value="Home" id="Home"></li>
+                        <li class="menu-itens"><input type="button" value="Cardapio" popovertarget="popapCardapio"
+                                class="Cardapio"></li>
+                        <li class="menu-itens"><input type="button" value="Sobre" id="Sobre"></li>
                     </div>
                 </div>
             </ul>
         </nav>
-    </head>
+    </header>
     <main>
         <div class="container">
             <div class="home">
@@ -47,14 +50,16 @@
                     <div class="imgLogo">
                         <img src="img/fotoMain.jpg" alt="Foto da logo do Point do Açai">
                     </div>
-    
+
                     <div class="home-text">
-                        <p class="textP">Conheça o melhor açai de Jardim Atlântico aqui no <span>POINT DO AÇAI!</span></p>
+                        <p class="textP">Conheça o melhor açai de Jardim Atlântico aqui no <span>POINT DO AÇAI!</span>
+                        </p>
                         <div class="containerCtn">
                             <p class="ctn"><i class="fa-brands fa-whatsapp"></i> Link Whatsapp</p>
-                        <p class="ctn"><i class="fa-brands fa-instagram"></i> Link Instagram</p>
+                            <p class="ctn"><i class="fa-brands fa-instagram"></i> Link Instagram</p>
                         </div>
-                        <input type="button" value="Cardapio" class="button">
+                        <input type="button" value="Cardapio" class="button" popovertarget="popapCardapio"
+                            class="Cardapio">
                     </div>
                 </div>
                 <div class="card-cardapio">
@@ -62,7 +67,7 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="img/acai_300ml.avif" alt="Foto do Açai 300ml">
-                            <button class="buttonCard">+</button>
+                            <button class="buttonCard" popovertarget="popapCardapio" onclick="aumentarAcai300()">+</button>
                         </div>
                         <div class="card-text">
                             <h3>Açaí 300 ML</h3>
@@ -74,16 +79,18 @@
                                 <br>*1 opção de caldas:(Caramelo, Chocolate, Morango, Leite condensado)
                             </p>
                         </div>
+
                     </div>
                     <div class="card">
                         <div class="card-img">
                             <img src="img/acai_500ml.avif" alt="Foto do Açai 500ml">
-                            <button class="buttonCard">+</button>
+                            <button class="buttonCard" popovertarget="popapCardapio" onclick="aumentarAcai500()">+</button>
 
                         </div>
                         <div class="card-text">
                             <h3>Açaí 500 ML</h3>
-                            <h3>Preço: R$ 00,00</p></h3>
+                            <h3>Preço: R$ 00,00</p>
+                            </h3>
                             <h3>Descrição</h3>
                             <p>*500 ML de Açaí, podendo escolher
                                 <br>*3 tipos de Frutas: (Banana, morango, kiwi, uva)
@@ -95,14 +102,14 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="img/acai_garrafa.jpg" alt="Foto do açai na garrafa">
-                            <button class="buttonCard">+</button>
+                            <button class="buttonCard" popovertarget="popapCardapio" onclick="aumentarAcaiGarrafa()">+</button>
 
                         </div>
                         <div class="card-text">
                             <h3>Açaí na Garrafa</h3>
                             <h3>Preço: R$ 00,00</h3>
                             <h3>Descrição</h3>
-                            <p>*Açaí na garrafa 
+                            <p>*Açaí na garrafa
                                 <br>*Podendo colocar (Banana, leite condensado, leite em pó)
                             </p>
                         </div>
@@ -111,13 +118,104 @@
             </div>
     </main>
     <footer>
-        <div class="footer"  id="footer">
+        <div class="footer" id="footer">
             <a target="_blank" href="https://maps.app.goo.gl/7RAGBaRfwwAwKNhT6"><i class="fa-solid fa-location-dot"></i>
                 Endereço: Rua Manoel da Nobrega, Bairro: Rio Doce, Cidade: Olinda</a>
             <a class="whatsapp" href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i> Point do Açaí</a>
             <a class="Instagram" href="#" target="_blank"><i class="fa-brands fa-instagram"></i> @Point do Açaí</a>
         </div>
     </footer>
+
+
+    <!-- Popaps -->
+
+
+    <div class="popapCardapio-body" id="popapCardapio" popover>
+        <div class="titlePopap">
+            <h2>Cardapio</h2>
+        </div>
+        <div class="card-cardapio-popap">
+            <div class="popap-card-img">
+                <img src="img/acai_300ml.avif" alt="Foto do Açai 300ml">
+            </div>
+            <div class="popap-card-text">
+                <h3>Açaí 300 ML</h3>
+                <h3>Preço: R$ 00,00</h3>
+                <h3>Descrição</h3>
+                <p>*300 ML de Açaí, podendo escolher
+                    <br>*3 tipos de Frutas: (Banana, morango, kiwi, uva)
+                    <br>*Acompanhamento: (Granola, MMs, paçoca, Leite em pó, Jujuba, Chocoball)
+                    <br>*1 opção de caldas:(Caramelo, Chocolate, Morango, Leite condensado)
+                </p>
+            </div>
+            <div class="popap-card-button">
+                <div class="button-cardabio">
+                    <button onclick="aumentarAcai300()">+</button>
+                    <p id="QuantidadeAcai300"></p>
+                    <button onclick="diminuirAcai300()">-</button>
+                </div>
+                <div class="popap-card-inpt">
+                    <input id="InputAcai300" type="text" placeholder="Exemplo: Sem granola">
+                </div>
+            </div>
+        </div>
+        <div class="card-cardapio-popap">
+            <div class="popap-card-img">
+                <img src="img/acai_500ml.avif" alt="Foto do Açai 500ml">
+            </div>
+            <div class="popap-card-text">
+                <h3>Açaí 500 ML</h3>
+                <h3>Preço: R$ 00,00</p>
+                </h3>
+                <h3>Descrição</h3>
+                <p>*500 ML de Açaí, podendo escolher
+                    <br>*3 tipos de Frutas: (Banana, morango, kiwi, uva)
+                    <br>*Acompanhamento: (Granola, MMs, paçoca, Leite em pó, Jujuba, Chocoball)
+                    <br>*1 opção de caldas:(Caramelo, Chocolate, Morango, Leite condensado)
+                </p>
+            </div>
+            <div class="popap-card-button">
+                <div class="button-cardabio">
+                    <button onclick="aumentarAcai500()">+</button>
+                    <p id="QuantidadeAcai500"></p>
+                    <button onclick="diminuirAcai500()">-</button>
+                </div>
+                <div class="popap-card-inpt">
+                    <input id="InputAcai500" type="text" placeholder="Exemplo: Sem granola">
+                </div>
+            </div>
+        </div>
+        <div class="card-cardapio-popap">
+            <div class="popap-card-img">
+                <img src="img/acai_garrafa.jpg" alt="Foto do açai na garrafa">
+            </div>
+            <div class="popap-card-text">
+                <h3>Açaí na Garrafa</h3>
+                <h3>Preço: R$ 00,00</h3>
+                <h3>Descrição</h3>
+                <p>*Açaí na garrafa
+                    <br>*Podendo colocar (Banana, leite condensado, leite em pó)
+                </p>
+            </div>
+            <div class="popap-card-button">
+                <div class="button-cardabio">
+                    <button onclick="aumentarAcaiGarrafa()">+</button>
+                    <p id="QuantidadeAcaiGarrafa"></p>
+                    <button onclick="diminuirAcaiGarrafa()">-</button>
+                </div>
+                <div class="popap-card-inpt">
+                    <input id="InputAcaiGarrafa" type="text" placeholder="Exemplo: Sem granola">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="scripts/scripts.js"></script>
+
+
+
 </body>
 
 </html>
