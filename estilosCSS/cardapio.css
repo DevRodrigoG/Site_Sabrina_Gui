@@ -71,6 +71,7 @@
     height: 100%;
     text-align: center;
     border: 1px solid black;
+    padding-top: 2px;
 }
 .popap-card-inpt{
     width: 100%;
@@ -84,4 +85,20 @@
     padding: 5px 3px 30px 3px;
     border: 1px solid black;
     border-radius: 5px;
+}
+.button-enviar-pedido{
+    width: 100%;
+}
+#EnviarPedido{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(86, 15, 86, 0.889);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    padding: 10px 5px;
+    margin: 10px auto;
+    cursor: pointer;
 }

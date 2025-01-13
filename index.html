@@ -17,10 +17,17 @@
 
     <link rel="stylesheet" href="./estilosCSS/style.css">
 
-    <title></title>
+    <link rel="stylesheet" href="estilosCSS/mobile.css">
+
+
+    <!-- INDEX  -->
+
+    <title>POINT AÇAÍ</title>
 </head>
 
 <body>
+
+    <!-- Header -->
 
     <header>
         <nav class="menu">
@@ -43,6 +50,9 @@
             </ul>
         </nav>
     </header>
+   
+    <!-- Main -->
+
     <main>
         <div class="container">
             <div class="home">
@@ -67,7 +77,8 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="img/acai_300ml.avif" alt="Foto do Açai 300ml">
-                            <button class="buttonCard" popovertarget="popapCardapio" onclick="aumentarAcai300()">+</button>
+                            <button class="buttonCard" popovertarget="popapCardapio"
+                                onclick="aumentarAcai300()">+</button>
                         </div>
                         <div class="card-text">
                             <h3>Açaí 300 ML</h3>
@@ -84,7 +95,8 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="img/acai_500ml.avif" alt="Foto do Açai 500ml">
-                            <button class="buttonCard" popovertarget="popapCardapio" onclick="aumentarAcai500()">+</button>
+                            <button class="buttonCard" popovertarget="popapCardapio"
+                                onclick="aumentarAcai500()">+</button>
 
                         </div>
                         <div class="card-text">
@@ -102,7 +114,8 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="img/acai_garrafa.jpg" alt="Foto do açai na garrafa">
-                            <button class="buttonCard" popovertarget="popapCardapio" onclick="aumentarAcaiGarrafa()">+</button>
+                            <button class="buttonCard" popovertarget="popapCardapio"
+                                onclick="aumentarAcaiGarrafa()">+</button>
 
                         </div>
                         <div class="card-text">
@@ -117,6 +130,9 @@
                 </div>
             </div>
     </main>
+    
+    <!-- Footer -->
+    
     <footer>
         <div class="footer" id="footer">
             <a target="_blank" href="https://maps.app.goo.gl/7RAGBaRfwwAwKNhT6"><i class="fa-solid fa-location-dot"></i>
@@ -128,7 +144,6 @@
 
 
     <!-- Popaps -->
-
 
     <div class="popapCardapio-body" id="popapCardapio" popover>
         <div class="titlePopap">
@@ -150,9 +165,10 @@
             </div>
             <div class="popap-card-button">
                 <div class="button-cardabio">
-                    <button onclick="aumentarAcai300()">+</button>
-                    <p id="QuantidadeAcai300"></p>
                     <button onclick="diminuirAcai300()">-</button>
+                    <p id="QuantidadeAcai300"></p>
+                    <button onclick="aumentarAcai300()">+</button>
+     
                 </div>
                 <div class="popap-card-inpt">
                     <input id="InputAcai300" type="text" placeholder="Exemplo: Sem granola">
@@ -176,9 +192,9 @@
             </div>
             <div class="popap-card-button">
                 <div class="button-cardabio">
-                    <button onclick="aumentarAcai500()">+</button>
-                    <p id="QuantidadeAcai500"></p>
                     <button onclick="diminuirAcai500()">-</button>
+                    <p id="QuantidadeAcai500"></p>
+                    <button onclick="aumentarAcai500()">+</button>
                 </div>
                 <div class="popap-card-inpt">
                     <input id="InputAcai500" type="text" placeholder="Exemplo: Sem granola">
@@ -199,9 +215,9 @@
             </div>
             <div class="popap-card-button">
                 <div class="button-cardabio">
-                    <button onclick="aumentarAcaiGarrafa()">+</button>
-                    <p id="QuantidadeAcaiGarrafa"></p>
                     <button onclick="diminuirAcaiGarrafa()">-</button>
+                    <p id="QuantidadeAcaiGarrafa"></p>
+                    <button onclick="aumentarAcaiGarrafa()">+</button>
                 </div>
                 <div class="popap-card-inpt">
                     <input id="InputAcaiGarrafa" type="text" placeholder="Exemplo: Sem granola">
@@ -209,10 +225,15 @@
             </div>
 
         </div>
+        <div class="button-enviar-pedido">
+            <button id="EnviarPedido" onclick="EnviarPedido()">Enviar Pedido</button>
+        </div>
     </div>
 
 
-<script src="scripts/scripts.js"></script>
+    <!-- Scripts JavaScript -->
+
+    <script src="scripts/scripts.js"></script>
 
 
 
