@@ -1,11 +1,9 @@
 @media (max-width: 850px){
-    body {
-        margin: 0; /* Remove as margens padrão */
-        padding: 0; /* Remove o padding padrão */
-        height: 100vh; /* Define a altura como 100% da viewport */
-        width: 100%; /* Certifica-se de que a largura ocupe toda a tela */
-        box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho total */
-      }
+
+    nav ul li p{
+        margin-top: 20px;
+        font-size: 15px;  
+    }
     .imgLogo {
         display: none;
     }
@@ -16,6 +14,9 @@
     }
     .button{
         margin: 10px auto;
+    }
+    .card-text{
+        width: 100%;
     }
     .card-cardapio img{
         width: 20%;
