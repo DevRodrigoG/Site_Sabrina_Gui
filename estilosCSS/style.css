@@ -62,15 +62,18 @@ nav ul li input:hover {
     margin-top: 50px;
     width: 100%;
 }
+.imgLogo{
+    width: 50%;
+}
 .imgLogo img{
-    width: 40%;
+    width: 60%;
     height: 100%;
     border-radius: 50%;
     margin-left: 100px;
 }
 .home-text{
     width: 50%;
-    margin-right: 100px;
+    margin-right: 7%;
 }
 .textP{
     font-size: 40px;
@@ -128,7 +131,7 @@ nav ul li input:hover {
     width:15%;
     border-radius: 10px;
     position: relative; /* ou absolute, dependendo da sua necessidade */ 
-    z-index: 1; /* Índice menor */   
+    z-index: 1; /* Índice menor */  
 }
 
 .buttonCard{
@@ -169,6 +172,7 @@ nav ul li input:hover {
     text-decoration: none;
     color: white;
     margin: 0 20px;
+    font-size: 12px;
 }
 .footer a:hover{
     text-decoration: underline;

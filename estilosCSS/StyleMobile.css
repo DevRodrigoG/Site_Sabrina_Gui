@@ -1,0 +1,25 @@
+@media (max-width: 850px){
+
+    .imgLogo {
+        display: none;
+    }
+    .home-text{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+    }
+    .button{
+        margin: 10px auto;
+    }
+    .card-cardapio img{
+        width: 20%;
+        height: 150px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer a{
+        margin-bottom: 10px;
+    }
+}

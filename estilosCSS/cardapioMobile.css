@@ -1,0 +1,35 @@
+@media (max-width: 1000px){
+
+    .popapCardapio-body{
+        height: 600px;
+    }
+    .card-cardapio-popap{
+        width: 80%;
+    }
+    .card-cardapio-popap{
+        width: 95%;
+    }
+    .popap-card-img{
+        height: 110px;
+    }
+    .popap-card-img img{
+        border-radius: 50%;
+    }
+    .popap-card-text{
+        width: 60%;
+        margin-right: 20px;
+    }
+    .popap-card-text h3{
+        font-size: 1em;
+    }
+    .popap-card-text p{
+        font-size: 12px;
+    }
+    .popap-card-button{
+        width: 20%;
+    }
+    .button-cardabio{
+        width: 100%;
+    }
+
+}

@@ -2,7 +2,7 @@
 .popapCardapio-body {
     flex-direction: column;
     width: 80%;
-    height: 700px;
+    height: 600px;
     margin: auto;
     border: 2px solid black;
     border-radius: 10px;
@@ -18,7 +18,7 @@
 }
 .card-cardapio-popap{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 5px auto 50px auto;
 }
 .popap-card-img{
@@ -49,8 +49,7 @@
     flex-direction: column;
 }
 .button-cardabio{
-    justify-content: space-between;
-    width: 150px;
+    width: 100%;
     display: flex;
     margin-bottom: 24px;
 }
@@ -74,9 +73,8 @@
     padding-top: 2px;
 }
 .popap-card-inpt{
-    width: 100%;
+    width: 95%;
     height: 70px;
-    display: block;
 }
 .popap-card-inpt input{
     text-align: center;
