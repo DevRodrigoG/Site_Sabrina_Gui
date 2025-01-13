@@ -1,7 +1,9 @@
 @media (max-width: 1000px){
 
     .popapCardapio-body{
-        height: 600px;
+        height: 500px;
+        width: 99%;
+        border-radius: 5px;
     }
     .card-cardapio-popap{
         width: 80%;
